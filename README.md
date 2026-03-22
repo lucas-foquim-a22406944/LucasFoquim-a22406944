@@ -1,1 +1,6 @@
-# LucasFoquim-a22406944
+Lucas Foquim
+a22406944
+
+Super User :
+admin
+admin00
