@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "loja",
     "festivais",
     "portfolio",
+    "escolaOnline",
 ]
 
 MIDDLEWARE = [
