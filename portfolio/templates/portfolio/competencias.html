@@ -1,0 +1,33 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Competências</h2>
+<a href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+
+<section>
+    {% for competencia in competencias %}
+    <article>
+        <header>
+            <h3>{{ competencia.nome }}</h3>
+            <p>{{ competencia.get_tipo_display }} | {{ competencia.get_nivel_display }}</p>
+        </header>
+        <section>
+            <p>{{ competencia.descricao }}</p>
+            <h4>Tecnologias</h4>
+            <ul>
+                {% for t in competencia.tecnologias.all %}
+                    <li>{{ t.nome }}</li>
+                {% empty %}
+                    <li>Nenhuma</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <footer>
+            <a href="{% url 'competencia_editar' competencia.id %}">Editar</a>
+            <a href="{% url 'competencia_apagar' competencia.id %}">Apagar</a>
+        </footer>
+    </article>
+    {% empty %}
+        <p>Sem competências ainda.</p>
+    {% endfor %}
+</section>
+{% endblock %}

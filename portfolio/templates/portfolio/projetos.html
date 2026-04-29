@@ -1,0 +1,33 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Projetos</h2>
+<a href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+
+<section>
+    {% for projeto in projetos %}
+    <article>
+        <header>
+            <h3>{{ projeto.titulo }}</h3>
+            <p>{{ projeto.ano }}</p>
+        </header>
+        <section>
+            <p>{{ projeto.descricao }}</p>
+            <h4>Tecnologias</h4>
+            <ul>
+                {% for t in projeto.tecnologias.all %}
+                    <li>{{ t.nome }}</li>
+                {% empty %}
+                    <li>Nenhuma</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <footer>
+            <a href="{% url 'projeto_editar' projeto.id %}">Editar</a>
+            <a href="{% url 'projeto_apagar' projeto.id %}">Apagar</a>
+        </footer>
+    </article>
+    {% empty %}
+        <p>Sem projetos ainda.</p>
+    {% endfor %}
+</section>
+{% endblock %}

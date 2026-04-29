@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* ── HEADER ── */
+body > header {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+body > header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: -0.5px;
+}
+
+body > header nav {
+    display: flex;
+    gap: 8px;
+}
+
+body > header nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+body > header nav a:hover {
+    background: #334155;
+    color: #f1f5f9;
+}
+
+/* ── MAIN ── */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* ── TÍTULO DA PÁGINA ── */
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 8px;
+}
+
+/* ── BOTÃO CRIAR NOVO ── */
+main > a {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 28px;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+}
+
+main > a:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+/* ── CARDS ── */
+section > article {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section > article:hover {
+    border-color: #38bdf8;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.1);
+}
+
+article > header {
+    border-bottom: 1px solid #334155;
+    padding-bottom: 12px;
+}
+
+article > header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 4px;
+}
+
+article > header p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+article > section {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+article > section p {
+    margin-bottom: 10px;
+}
+
+article > section h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #475569;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+article > section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+article > section ul li {
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #1e40af;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* ── BOTÕES EDITAR / APAGAR ── */
+article > footer {
+    display: flex;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid #334155;
+}
+
+article > footer a {
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+article > footer a:first-child {
+    background: #1d4ed8;
+    color: white;
+}
+
+article > footer a:first-child:hover {
+    background: #2563eb;
+}
+
+article > footer a:last-child {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+
+article > footer a:last-child:hover {
+    background: #991b1b;
+}
+
+/* ── FORMULÁRIOS ── */
+form {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 700px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+form input,
+form textarea,
+form select {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #f1f5f9;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form select[multiple] {
+    min-height: 120px;
+}
+
+form button[type="submit"] {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+}
+
+form button[type="submit"]:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+form a {
+    color: #64748b;
+    font-size: 14px;
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 12px 0;
+}
+
+form a:hover {
+    color: #94a3b8;
+}
+
+/* ── PÁGINA CONFIRMAR APAGAR ── */
+main > p {
+    color: #94a3b8;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+main > p strong {
+    color: #f87171;
+}
+
+/* ── FOOTER ── */
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #1e293b;
+    color: #475569;
+    font-size: 13px;
+    margin-top: 60px;
+    border-top: 1px solid #334155;
+}

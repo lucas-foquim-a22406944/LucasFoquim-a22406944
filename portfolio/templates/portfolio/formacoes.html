@@ -1,0 +1,26 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Formações</h2>
+<a href="{% url 'formacao_criar' %}">+ Nova Formação</a>
+
+<section>
+    {% for formacao in formacoes %}
+    <article>
+        <header>
+            <h3>{{ formacao.titulo }}</h3>
+            <p>{{ formacao.instituicao }} | {{ formacao.get_tipo_display }}</p>
+            <p>{{ formacao.data_inicio }} — {{ formacao.data_fim|default:"presente" }}</p>
+        </header>
+        <section>
+            <p>{{ formacao.descricao }}</p>
+        </section>
+        <footer>
+            <a href="{% url 'formacao_editar' formacao.id %}">Editar</a>
+            <a href="{% url 'formacao_apagar' formacao.id %}">Apagar</a>
+        </footer>
+    </article>
+    {% empty %}
+        <p>Sem formações ainda.</p>
+    {% endfor %}
+</section>
+{% endblock %}

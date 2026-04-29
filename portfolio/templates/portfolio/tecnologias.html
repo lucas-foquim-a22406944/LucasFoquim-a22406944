@@ -1,0 +1,25 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Tecnologias</h2>
+<a href="{% url 'tecnologia_criar' %}">+ Nova Tecnologia</a>
+
+<section>
+    {% for tecnologia in tecnologias %}
+    <article>
+        <header>
+            <h3>{{ tecnologia.nome }}</h3>
+            <p>{{ tecnologia.get_tipo_display }} | {{ tecnologia.get_nivel_interesse_display }}</p>
+        </header>
+        <section>
+            <p>{{ tecnologia.descricao }}</p>
+        </section>
+        <footer>
+            <a href="{% url 'tecnologia_editar' tecnologia.id %}">Editar</a>
+            <a href="{% url 'tecnologia_apagar' tecnologia.id %}">Apagar</a>
+        </footer>
+    </article>
+    {% empty %}
+        <p>Sem tecnologias ainda.</p>
+    {% endfor %}
+</section>
+{% endblock %}

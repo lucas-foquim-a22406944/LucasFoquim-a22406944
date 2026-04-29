@@ -1,0 +1,148 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+<h2>Sobre esta Aplicação</h2>
+
+<!-- 1. ARQUITETURA MVT -->
+<section>
+    <article>
+        <header>
+            <h3>1. Arquitetura MVT do Django</h3>
+        </header>
+        <section>
+            <img src="{% static 'portfolio/diagrama.png' %}" alt="Diagrama MVT em papel" style="max-width:100%; border-radius:8px; margin-bottom:16px;">
+
+            <h4>Model</h4>
+            <p>O Model representa a camada de dados da aplicação. Define a estrutura da base de dados através de classes Python, e é responsável por guardar, consultar e manipular os dados.</p>
+
+            <h4>View</h4>
+            <p>A View é a camada lógica. Recebe os pedidos HTTP do browser, consulta os dados necessários ao Model, e envia-os para o Template para serem renderizados.</p>
+
+            <h4>Template</h4>
+            <p>O Template é a camada de apresentação. É um ficheiro HTML com tags especiais do Django que permitem inserir dados dinâmicos vindos da View.</p>
+
+            <h4>Fluxo de informação</h4>
+            <p>O browser faz um pedido (request) → o Django procura a URL em urls.py → chama a View correspondente → a View consulta o Model → os dados são enviados para o Template → o Template renderiza o HTML → o browser recebe a resposta (response).</p>
+
+            <h4>Vídeo Tutorial</h4>
+            <p><em>Vídeo em produção.</em></p>
+        </section>
+    </article>
+</section>
+
+<!-- 2. MODELAÇÃO -->
+<section>
+    <article>
+        <header>
+            <h3>2. Modelação</h3>
+        </header>
+        <section>
+            <h4>Diagrama Entidade-Relação</h4>
+            <img src="{% static 'portfolio/diagrama.png' %}" alt="Diagrama ER" style="max-width:100%; border-radius:8px; margin-bottom:16px;">
+
+            <h4>models.py</h4>
+            <pre style="background:#0f172a; color:#38bdf8; padding:16px; border-radius:8px; overflow-x:auto; font-size:13px;">
+class Tecnologia(models.Model):
+    nome = models.CharField(max_length=100)
+    tipo = models.ForeignKey(TipoTecnologia, ...)
+    descricao = models.TextField()
+    nivel_interesse = models.IntegerField()
+
+class Competencia(models.Model):
+    nome = models.CharField(max_length=200)
+    tipo = models.CharField(max_length=50)
+    nivel = models.CharField(max_length=50)
+    tecnologias = models.ManyToManyField(Tecnologia)
+
+class Projeto(models.Model):
+    titulo = models.CharField(max_length=200)
+    descricao = models.TextField()
+    ano = models.IntegerField()
+    tecnologias = models.ManyToManyField(Tecnologia)
+    competencias = models.ManyToManyField(Competencia)
+
+class Formacao(models.Model):
+    titulo = models.CharField(max_length=200)
+    instituicao = models.CharField(max_length=200)
+    data_inicio = models.DateField()
+    competencias = models.ManyToManyField(Competencia)
+            </pre>
+        </section>
+    </article>
+</section>
+
+<!-- 3. TECNOLOGIAS -->
+<section>
+    <article>
+        <header>
+            <h3>3. Tecnologias Utilizadas</h3>
+        </header>
+        <section>
+            {% regroup tecnologias by tipo as tecnologias_por_tipo %}
+            {% for grupo in tecnologias_por_tipo %}
+                <h4>{{ grupo.grouper }}</h4>
+                <ul>
+                    {% for tec in grupo.list %}
+                        <li>
+                            <strong>{{ tec.nome }}</strong>
+                            {% if tec.descricao %} — {{ tec.descricao }}{% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% empty %}
+                <p>Sem tecnologias registadas ainda.</p>
+            {% endfor %}
+        </section>
+    </article>
+</section>
+
+<!-- 4. ESTRUTURA DE PÁGINAS -->
+<section>
+    <article>
+        <header>
+            <h3>4. Estrutura de Navegação</h3>
+        </header>
+        <section>
+            <img src="{% static 'portfolio/diagrama.png' %}" alt="Mapa de navegação" style="max-width:100%; border-radius:8px;">
+            <p style="margin-top:10px;">A aplicação está organizada em secções: Projetos, Tecnologias, Competências, Formações e Sobre.</p>
+        </section>
+    </article>
+</section>
+
+<!-- 5. REPOSITÓRIO GITHUB -->
+<section>
+    <article>
+        <header>
+            <h3>5. Repositório GitHub</h3>
+        </header>
+        <section>
+            <p>O código fonte desta aplicação está disponível em: <a href="https://github.com/lucas-foquim-a22406944/LucasFoquim-a22406944" target="_blank">github.com/lucas-foquim-a22406944</a></p>
+            <p>O GitHub foi usado para controlo de versões ao longo do desenvolvimento. Permite guardar o histórico de alterações, reverter para versões anteriores, e aceder ao código a partir de qualquer máquina. É uma ferramenta essencial no desenvolvimento de software moderno.</p>
+        </section>
+    </article>
+</section>
+
+<!-- 6. MAKING OF -->
+<section>
+    <article>
+        <header>
+            <h3>6. Making Of</h3>
+        </header>
+        <section>
+            <p>O Making Of documenta o processo de desenvolvimento desta aplicação, desde a modelação inicial até à implementação das funcionalidades.</p>
+            <ul>
+                {% for entrada in makingof %}
+                    <li>
+                        <strong>{{ entrada.titulo }}</strong> ({{ entrada.fase }}) — {{ entrada.data }}<br>
+                        {{ entrada.descricao }}
+                    </li>
+                {% empty %}
+                    <li>Sem entradas no Making Of ainda.</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+</section>
+
+{% endblock %}

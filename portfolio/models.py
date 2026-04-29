@@ -44,13 +44,15 @@ class UnidadeCurricular(models.Model):
 
 class Tecnologia(models.Model):
     TIPO_CHOICES = [
-        ('linguagem', 'Linguagem'),
-        ('framework', 'Framework'),
-        ('ferramenta', 'Ferramenta'),
-        ('base_dados', 'Base de Dados'),
-        ('outro', 'Outro'),
-    ]
-
+    ('linguagem', 'Linguagem'),
+    ('framework', 'Framework'),
+    ('ferramenta', 'Ferramenta'),
+    ('base_dados', 'Base de Dados'),
+    ('frontend', 'Frontend'),
+    ('backend', 'Backend'),
+    ('storage', 'Storage'),
+    ('outro', 'Outro'),
+]
     NIVEL_CHOICES = [
         (1, ' Iniciante'),
         (2, ' Básico'),
@@ -68,6 +70,7 @@ class Tecnologia(models.Model):
 
     def __str__(self):
         return self.nome
+
 
 
 class Competencia(models.Model):
