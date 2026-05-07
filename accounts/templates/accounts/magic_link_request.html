@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Link Mágico</title></head>
+<body>
+<h2>Link Mágico</h2>
+
+{% if mensagem %}
+    <p>{{ mensagem }}</p>
+{% endif %}
+
+<a href="{% url 'login' %}">Voltar ao login</a>
+</body>
+</html>

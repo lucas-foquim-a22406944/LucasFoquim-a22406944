@@ -1,0 +1,50 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<article>
+    <header>
+        <h2>{{ artigo.titulo }}</h2>
+        <p>{{ artigo.autor.username }} | {{ artigo.data_criacao|date:"d/m/Y" }}</p>
+    </header>
+    <section>
+        {% if artigo.fotografia %}
+            <img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}" style="max-width:500px;">
+        {% endif %}
+        <p>{{ artigo.texto }}</p>
+        {% if artigo.link_externo %}
+            <p><a href="{{ artigo.link_externo }}" target="_blank">Ler mais</a></p>
+        {% endif %}
+    </section>
+
+    <!-- LIKES -->
+    <section>
+        <form method="post">
+            {% csrf_token %}
+            <button name="like" type="submit">👍 {{ artigo.likes.count }} Likes</button>
+        </form>
+    </section>
+
+    <!-- COMENTÁRIOS -->
+    <section>
+        <h3>Comentários ({{ comentarios.count }})</h3>
+        {% for comentario in comentarios %}
+            <article>
+                <p><strong>{{ comentario.autor.username }}</strong> — {{ comentario.data_criacao|date:"d/m/Y H:i" }}</p>
+                <p>{{ comentario.texto }}</p>
+            </article>
+        {% empty %}
+            <p>Sem comentários ainda.</p>
+        {% endfor %}
+
+        {% if user.is_authenticated %}
+            <h4>Deixa um comentário</h4>
+            <form method="post">
+                {% csrf_token %}
+                {{ form_comentario.as_p }}
+                <button name="comentario" type="submit">Comentar</button>
+            </form>
+        {% else %}
+            <p><a href="{% url 'login' %}">Faz login</a> para comentar.</p>
+        {% endif %}
+    </section>
+</article>
+{% endblock %}

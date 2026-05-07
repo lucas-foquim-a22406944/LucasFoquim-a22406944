@@ -1,7 +1,10 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Competências</h2>
-<a href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+
+{% if user.is_authenticated and user.groups.all|join:", " == "gestor-portfolio" %}
+    <a href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+{% endif %}
 
 <section>
     {% for competencia in competencias %}
@@ -21,10 +24,12 @@
                 {% endfor %}
             </ul>
         </section>
+        {% if user.is_authenticated and user.groups.all|join:", " == "gestor-portfolio" %}
         <footer>
             <a href="{% url 'competencia_editar' competencia.id %}">Editar</a>
             <a href="{% url 'competencia_apagar' competencia.id %}">Apagar</a>
         </footer>
+        {% endif %}
     </article>
     {% empty %}
         <p>Sem competências ainda.</p>

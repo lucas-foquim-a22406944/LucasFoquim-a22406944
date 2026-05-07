@@ -1,7 +1,10 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Projetos</h2>
-<a href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+
+{% if user.is_authenticated and user.groups.all|join:", " == "gestor-portfolio" %}
+    <a href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+{% endif %}
 
 <section>
     {% for projeto in projetos %}
@@ -21,10 +24,12 @@
                 {% endfor %}
             </ul>
         </section>
+        {% if user.is_authenticated and user.groups.all|join:", " == "gestor-portfolio" %}
         <footer>
             <a href="{% url 'projeto_editar' projeto.id %}">Editar</a>
             <a href="{% url 'projeto_apagar' projeto.id %}">Apagar</a>
         </footer>
+        {% endif %}
     </article>
     {% empty %}
         <p>Sem projetos ainda.</p>
