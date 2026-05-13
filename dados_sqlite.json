@@ -1,0 +1,1370 @@
+[
+{
+  "model": "portfolio.licenciatura",
+  "pk": 1,
+  "fields": {
+    "nome": "Licenciatura em Engenharia Informática",
+    "instituicao": "Universidade Lusófona",
+    "grau": "Licenciatura",
+    "area": "Engenharia Informática",
+    "duracao_anos": 3,
+    "ano_inicio": 2022
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 1,
+  "fields": {
+    "nome": "Lucio Studer Ferreira",
+    "email": "lucio.studer@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/lucio-miguel-studer-ferreira-6069",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 2,
+  "fields": {
+    "nome": "Berend Willem Martijn Kuipers",
+    "email": "martijn.kuipers@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/berend-willem-martijn-kuipers-8094",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 3,
+  "fields": {
+    "nome": "Daniel Tomás De Maia Mozart Silveira",
+    "email": "p6902@gmail.com",
+    "url_perfil": "https://www.ulusofona.pt/docentes/daniel-tomas-de-maia-mozart-silveira-6902",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 4,
+  "fields": {
+    "nome": "Daniel Filipe Sobral Fernandes",
+    "email": "daniel.fernandes@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/daniel-filipe-sobral-fernandes-6301",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 5,
+  "fields": {
+    "nome": "Luis Gomes",
+    "email": "luis.a.gomes@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/luis-alexandre-ferreira-de-oliveira-gomes-2703",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 6,
+  "fields": {
+    "nome": "José Cascais Brás",
+    "email": "cascaisbras@gmail.com",
+    "url_perfil": "https://www.ulusofona.pt/docentes/jose-manuel-catarino-barreiros-cascais-bras-6255",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 7,
+  "fields": {
+    "nome": "Maria José De Almeida E Silva",
+    "email": "maria.almeida.silva@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/maria-jose-de-almeida-e-silva-7078",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 8,
+  "fields": {
+    "nome": "Paulo Jorge Tavares Guedes",
+    "email": "paulo.guedes60@yahoo.com",
+    "url_perfil": "https://www.ulusofona.pt/docentes/paulo-jorge-tavares-guedes-4693",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 9,
+  "fields": {
+    "nome": "Pedro Hugo De Queirós Alves",
+    "email": "pedro.alves@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/pedro-hugo-de-queiros-alves-4997",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 10,
+  "fields": {
+    "nome": "Rui Ribeiro",
+    "email": "rui.ribeiro@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/rui-pedro-nobre-ribeiro-3113",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 11,
+  "fields": {
+    "nome": "João Licinio Cabral Da Silva",
+    "email": "p1508@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/joao-licinio-cabral-da-silva-1508",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 12,
+  "fields": {
+    "nome": "João Caldeira",
+    "email": "jpalmela@gmail.com",
+    "url_perfil": "https://www.ulusofona.pt/docentes/joao-carlos-palmela-pinheiro-caldeira-7559",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 13,
+  "fields": {
+    "nome": "Cristiane Ferreira",
+    "email": "crisfis@gmail.com",
+    "url_perfil": "https://www.ulusofona.pt/docentes/cristiane-da-silva-ferreira-nunes-3715",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 14,
+  "fields": {
+    "nome": "Sofia Naique",
+    "email": "p6476@ulusofona.pt",
+    "url_perfil": "https://www.ulusofona.pt/docentes/sofia-marta-lima-naique-6476",
+    "departamento": "DEISI"
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 2,
+  "fields": {
+    "nome": "Fundamentos de Física",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 3,
+  "fields": {
+    "nome": "Fundamentos de Programação",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      9
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 4,
+  "fields": {
+    "nome": "Matemática I",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      14
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 5,
+  "fields": {
+    "nome": "Matemática Discreta",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      7
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 6,
+  "fields": {
+    "nome": "Sistemas Digitais",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      4
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 7,
+  "fields": {
+    "nome": "Álgebra Linear",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      7
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 8,
+  "fields": {
+    "nome": "Algoritmia e Estruturas de Dados",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      9
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 9,
+  "fields": {
+    "nome": "Arquitetura de Computadores",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      4
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 10,
+  "fields": {
+    "nome": "Competências Comportamentais",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 4,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 11,
+  "fields": {
+    "nome": "Linguagens de Programação I",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      9
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 12,
+  "fields": {
+    "nome": "Matemática II",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      14
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 13,
+  "fields": {
+    "nome": "Arquiteturas Avançadas de Computadores",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 14,
+  "fields": {
+    "nome": "Bases de Dados",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      5,
+      10
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 15,
+  "fields": {
+    "nome": "Desenvolvimento de Interfaces Web",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 3,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      1
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 16,
+  "fields": {
+    "nome": "Linguagens de Programação II",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      9
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 17,
+  "fields": {
+    "nome": "Processamento de Imagem",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 4,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      12
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 18,
+  "fields": {
+    "nome": "Sistemas Operativos",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      3,
+      8
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 19,
+  "fields": {
+    "nome": "Engenharia de Requisitos e Testes",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      6,
+      10
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 20,
+  "fields": {
+    "nome": "Probabilidades e Estatística",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      7
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 21,
+  "fields": {
+    "nome": "Programação Web",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      1
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 22,
+  "fields": {
+    "nome": "Redes de Computadores",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      5
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 23,
+  "fields": {
+    "nome": "Sistemas de Suporte à Decisão",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "licenciatura": [
+      1
+    ],
+    "docentes": [
+      11
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 24,
+  "fields": {
+    "nome": "Trabalho Final de Curso",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 20,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 25,
+  "fields": {
+    "nome": "Computação Distribuída",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 26,
+  "fields": {
+    "nome": "Data Science",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 27,
+  "fields": {
+    "nome": "Engenharia de Software",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 28,
+  "fields": {
+    "nome": "Interação Humano-Máquina",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 29,
+  "fields": {
+    "nome": "Computação Móvel",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 30,
+  "fields": {
+    "nome": "Inteligência Artificial",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 31,
+  "fields": {
+    "nome": "Segurança Informática",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 32,
+  "fields": {
+    "nome": "Sistemas de Informação na Nuvem",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "licenciatura": [
+      1
+    ],
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 1,
+  "fields": {
+    "nome": "Python",
+    "tipo": "linguagem",
+    "logo": "tecnologias/python.jpg",
+    "url_site": "https://www.python.org",
+    "nivel_interesse": 4,
+    "descricao": "Linguagem de programação de alto nível, versátil e fácil de aprender, muito usada em ciência de dados, web e automação."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 2,
+  "fields": {
+    "nome": "JavaScript",
+    "tipo": "linguagem",
+    "logo": "",
+    "url_site": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "nivel_interesse": 3,
+    "descricao": "Linguagem de programação usada para tornar páginas web interativas, corre diretamente no browser."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 3,
+  "fields": {
+    "nome": "HTML",
+    "tipo": "linguagem",
+    "logo": "",
+    "url_site": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "nivel_interesse": 2,
+    "descricao": "Linguagem de marcação usada para estruturar o conteúdo de páginas web."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 4,
+  "fields": {
+    "nome": "CSS",
+    "tipo": "linguagem",
+    "logo": "",
+    "url_site": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "nivel_interesse": 2,
+    "descricao": "Linguagem usada para estilizar e definir o layout de páginas web."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 5,
+  "fields": {
+    "nome": "Django",
+    "tipo": "framework",
+    "logo": "",
+    "url_site": "https://www.djangoproject.com",
+    "nivel_interesse": 4,
+    "descricao": "Framework web em Python que permite desenvolvimento rápido de aplicações web seguras e escaláveis."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 6,
+  "fields": {
+    "nome": "GitHub",
+    "tipo": "outro",
+    "logo": "",
+    "url_site": "https://github.com",
+    "nivel_interesse": 5,
+    "descricao": "Plataforma online para hospedar repositórios Git e colaborar em projetos de software."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 7,
+  "fields": {
+    "nome": "Docker",
+    "tipo": "ferramenta",
+    "logo": "",
+    "url_site": "https://www.docker.com",
+    "nivel_interesse": 2,
+    "descricao": "Ferramenta que permite criar e correr aplicações em contentores isolados e portáteis."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 8,
+  "fields": {
+    "nome": "VSCode",
+    "tipo": "ferramenta",
+    "logo": "",
+    "url_site": "https://code.visualstudio.com",
+    "nivel_interesse": 4,
+    "descricao": "Editor de código gratuito da Microsoft, muito popular e extensível com inúmeras extensões."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 9,
+  "fields": {
+    "nome": "Java",
+    "tipo": "linguagem",
+    "logo": "",
+    "url_site": "https://www.java.com",
+    "nivel_interesse": 5,
+    "descricao": "Linguagem de programação orientada a objetos, multiplataforma e muito usada em aplicações empresariais."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 10,
+  "fields": {
+    "nome": "PostgreSQL",
+    "tipo": "base_dados",
+    "logo": "",
+    "url_site": "https://www.postgresql.org",
+    "nivel_interesse": 2,
+    "descricao": "Sistema de gestão de base de dados relacional open-source, robusto e muito utilizado em produção."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 11,
+  "fields": {
+    "nome": "React",
+    "tipo": "framework",
+    "logo": "",
+    "url_site": "https://react.dev",
+    "nivel_interesse": 3,
+    "descricao": "Biblioteca JavaScript para construir interfaces de utilizador baseadas em componentes reutilizáveis."
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 12,
+  "fields": {
+    "nome": "Next.js",
+    "tipo": "framework",
+    "logo": "",
+    "url_site": "https://nextjs.org",
+    "nivel_interesse": 3,
+    "descricao": "Framework React que permite renderização server-side, rotas automáticas e desenvolvimento web fullstack."
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 1,
+  "fields": {
+    "nome": "Programação Orientada a Objetos",
+    "tipo": "tecnica",
+    "descricao": "Capacidade de desenvolver software usando conceitos como classes, herança e encapsulamento.",
+    "nivel": "intermedio",
+    "tecnologias": [
+      1,
+      9
+    ]
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 2,
+  "fields": {
+    "nome": "Desenvolvimento Web",
+    "tipo": "tecnica",
+    "descricao": "Capacidade de criar aplicações web usando tecnologias frontend e backend.",
+    "nivel": "intermedio",
+    "tecnologias": [
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 3,
+  "fields": {
+    "nome": "Controlo de Versões",
+    "tipo": "tecnica",
+    "descricao": "Capacidade de gerir e acompanhar alterações no código usando GitHub.",
+    "nivel": "avancado",
+    "tecnologias": [
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 4,
+  "fields": {
+    "nome": "Base de Dados",
+    "tipo": "tecnica",
+    "descricao": "Capacidade de modelar, criar e consultar bases de dados relacionais.",
+    "nivel": "intermedio",
+    "tecnologias": [
+      7,
+      10
+    ]
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 5,
+  "fields": {
+    "nome": "Resolução de Problemas",
+    "tipo": "soft",
+    "descricao": "Capacidade de analisar problemas complexos e encontrar soluções eficazes.",
+    "nivel": "avancado",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 6,
+  "fields": {
+    "nome": "Trabalho Em Equipa",
+    "tipo": "soft",
+    "descricao": "Capacidade de colaborar e comunicar eficazmente em projetos de grupo.",
+    "nivel": "avancado",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 7,
+  "fields": {
+    "nome": "Inglês Técnico",
+    "tipo": "linguistica",
+    "descricao": "Capacidade de ler, escrever e comunicar em inglês em contextos técnicos e profissionais.",
+    "nivel": "avancado",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 1,
+  "fields": {
+    "titulo": "Projeto LP2- The Great Programming Journey",
+    "descricao": "Jogo de tabuleiro desenvolvido em Java no âmbito da unidade curricular de Linguagens de Programação 2. O projeto consistiu na implementação de várias funcionalidades como movimentação de peças, gestão de turnos, e sistema de pontuação.",
+    "ano": 2026,
+    "imagem": "",
+    "url_github": "https://github.com/daniel-carvalho-a22403424/LP2-22403424-22406944",
+    "url_video": "https://youtu.be/HKMGnV9zp7g",
+    "conceitos_aplicados": "Foram aplicados conceitos de programação orientada a objetos.",
+    "unidade_curricular": null,
+    "tecnologias": [
+      9
+    ],
+    "competencias": [
+      1,
+      3,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 2,
+  "fields": {
+    "titulo": "Projetos Desenvolvimento Web",
+    "descricao": "Conjunto de laboratórios práticos desenvolvidos no âmbito da unidade curricular de Desenvolvimento Web. Os exercícios focaram-se na criação e estilização de páginas web utilizando HTML e CSS, abordando conceitos como estrutura de documentos, seletores, layouts, flexbox e design responsivo.",
+    "ano": 2025,
+    "imagem": "",
+    "url_github": "https://github.com/lucasfoquim/lucasfoquim.github.io",
+    "url_video": "",
+    "conceitos_aplicados": "Estruturação de páginas com HTML5, estilização com CSS3, layouts com Flexbox, design responsivo.",
+    "unidade_curricular": 15,
+    "tecnologias": [
+      3,
+      4
+    ],
+    "competencias": [
+      2,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 3,
+  "fields": {
+    "titulo": "Laboratórios de Desenvolvimento Web — React e Next.js",
+    "descricao": "Conjunto de laboratórios práticos desenvolvidos no âmbito da unidade curricular de Desenvolvimento Web. Os exercícios focaram-se no desenvolvimento de interfaces web modernas utilizando React e Next.js, abordando conceitos como componentes, props, estado, rotas e renderização do lado do servidor.",
+    "ano": 2025,
+    "imagem": "",
+    "url_github": "https://github.com/lucasfoquim/react-next-web",
+    "url_video": "",
+    "conceitos_aplicados": "Componentes React, gestão de estado, props, routing com Next.js, renderização server-side e client-side.",
+    "unidade_curricular": 15,
+    "tecnologias": [
+      11,
+      12
+    ],
+    "competencias": [
+      2,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 4,
+  "fields": {
+    "titulo": "Gestão de Coleção de CDs com Suporte LLM",
+    "descricao": "Aplicação de consola desenvolvida em Java no âmbito da unidade curricular de Processamento de Imagens. Permite gerir uma coleção de CDs com operações de adicionar, listar e pesquisar, integrando um modelo de linguagem (LLM) para auxiliar na pesquisa inteligente de CDs na coleção.",
+    "ano": 2025,
+    "imagem": "",
+    "url_github": "https://github.com/AKADaniel-hub/a22403424-a22406944",
+    "url_video": "",
+    "conceitos_aplicados": "Programação Orientada a Objetos, estruturas de dados, integração com APIs externas, manipulação de coleções em Java.",
+    "unidade_curricular": 17,
+    "tecnologias": [
+      9
+    ],
+    "competencias": [
+      1,
+      3,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 1,
+  "fields": {
+    "titulo": "Licenciatura em Engenharia Informática",
+    "instituicao": "Universidade Lusófona",
+    "data_inicio": "2024-09-09",
+    "data_fim": null,
+    "descricao": "Licenciatura na área de engenharia informática com foco em desenvolvimento de software, bases de dados e sistemas.",
+    "certificado_url": "",
+    "tipo": "academico",
+    "competencias": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 2,
+  "fields": {
+    "titulo": "First Certificate in English (FCE)",
+    "instituicao": "Cambridge Assessment English",
+    "data_inicio": "2022-07-12",
+    "data_fim": null,
+    "descricao": "Certificação internacional de inglês de nível B2 emitida pela Universidade de Cambridge.",
+    "certificado_url": "",
+    "tipo": "presencial",
+    "competencias": [
+      7
+    ]
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 1,
+  "fields": {
+    "titulo": "Abordagens não supervisionadas para deteção de reviews falsas em plataformas de e-commerce",
+    "autor": "Nuno Santinhos",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "https://teses.deisi.ulusofona.pt/media/teses/TFC_1%C2%BA_entrega.pdf",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 2,
+  "fields": {
+    "titulo": "AdvenTour",
+    "autor": "Gonçalo Neves, Lucas Botelho",
+    "ano": 2025,
+    "destaque": false,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 3,
+  "fields": {
+    "titulo": "Aplicativo para gestão de voluntários e auxilio de associações de animais",
+    "autor": "Cátia Coelho",
+    "ano": 2025,
+    "destaque": false,
+    "url_repositorio": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2116_AnimalTinder.pdf",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 4,
+  "fields": {
+    "titulo": "Assessing effectiveness of language models in Project Management Tasks",
+    "autor": "Alexandre Jose Silva Abdala Junior",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 5,
+  "fields": {
+    "titulo": "Comid: Identificação de Comunidades Online",
+    "autor": "Thiago Henrique Dos Santos",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 6,
+  "fields": {
+    "titulo": "Cost Reduction and Optimization in Cloud Environments",
+    "autor": "João Pedro Matos",
+    "ano": 2025,
+    "destaque": false,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 7,
+  "fields": {
+    "titulo": "Energy Consumption Crawler",
+    "autor": "Gonçalo Cabeleira",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 8,
+  "fields": {
+    "titulo": "Evolução dos Sistemas de Autenticação Forte: análise e implementação",
+    "autor": "Jilson Almeida Benjamim",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 9,
+  "fields": {
+    "titulo": "Identificação e Deteção em Tempo Real de Ameaças de Phishing em Aplicações de Mensagens Instantâneas",
+    "autor": "João Tiago Durães",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 10,
+  "fields": {
+    "titulo": "Ray Tracing and SSR: A Hybrid Approach",
+    "autor": "Leandro Brás",
+    "ano": 2025,
+    "destaque": false,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 11,
+  "fields": {
+    "titulo": "Telemedicina Segura e Escalável – Uma Abordagem de Contentores e Microsserviços",
+    "autor": "Ricardo Gonçalves",
+    "ano": 2025,
+    "destaque": true,
+    "url_repositorio": "",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 12,
+  "fields": {
+    "titulo": "Melhores Práticas Na Transformação Digital Das Pmes Portuguesas: Um Estudo De Caso Do Setor Do Turismo, Hotelaria E Restauração No Município Do Barreiro",
+    "autor": "Valdemar Sebastião Buco",
+    "ano": 2025,
+    "destaque": false,
+    "url_repositorio": "https://teses.deisi.ulusofona.pt/media/teses/Melhores_Pr%C3%A1ticas_na_TD_das_PMEs._um_estudo_de_caso_no_STHRdocx.docx",
+    "licenciatura": null
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 1,
+  "fields": {
+    "titulo": "Modelação inicial das entidades no papel",
+    "data": "2026-04-11",
+    "descricao": "Desenho do diagrama de entidades e relações no caderno, identificando as entidades principais, os seus atributos e as relações entre elas antes de começar a implementação.",
+    "imagem": "makingof/diagrama_final.jpg",
+    "fase": "modelacao",
+    "entidade_relacionada": "Todas",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 2,
+  "fields": {
+    "titulo": "Adição da entidade extra Docente",
+    "data": "2026-04-11",
+    "descricao": "Decidi criar a entidade Docente por iniciativa própria para associar docentes às UCs com link para o perfil na Lusófona, em vez de guardar apenas o nome como texto simples.",
+    "imagem": "makingof/diagrama_final_QsOX3fl.jpg",
+    "fase": "modelacao",
+    "entidade_relacionada": "Docente",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 3,
+  "fields": {
+    "titulo": "Erro no script de importação das UCs",
+    "data": "2026-04-11",
+    "descricao": "O script usava o campo curricularIUnitName incorreto. Após inspecionar o JSON da API identifiquei o campo correto curricularUnitName e corrigi o script.",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "UnidadeCurricular",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 4,
+  "fields": {
+    "titulo": "Uso de Inteligência Artificial",
+    "data": "2026-04-11",
+    "descricao": ".",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "Todas",
+    "uso_ia": "Utilizei o Claude como ferramenta de apoio pontual durante o desenvolvimento. A modelação das entidades, atributos e relações foi feita por mim no papel antes de qualquer implementação. Recorri à IA principalmente para esclarecer dúvidas técnicas sobre Django, validar decisões de modelação e ajudar a diagnosticar erros que surgiram durante a implementação, como o problema do timeout na API da Lusófona e o campo incorreto no script das UCs. O código foi sempre revisto e adaptado por mim para se adequar ao meu modelo específico."
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 5,
+  "fields": {
+    "titulo": "Dificuldades com Migrações",
+    "data": "2026-04-29",
+    "descricao": "Durante a implementação da página \"Sobre\", tentei converter o campo tipo da classe Tecnologia de CharField para ForeignKey, criando uma nova classe TipoTecnologia. No entanto, a base de dados ficou com dados inválidos porque os valores existentes (ex: 'linguagem') não tinham correspondência na nova tabela. A solução foi reverter a alteração e manter o campo como CharField com choices, adicionando apenas os novos tipos necessários.",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 6,
+  "fields": {
+    "titulo": "Erro com Ficheiros Estáticos (CSS)",
+    "data": "2026-04-29",
+    "descricao": "O CSS do portfolio não estava a ser aplicado devido à falta da configuração STATIC_ROOT no settings.py. Após adicionar STATIC_ROOT = BASE_DIR / 'staticfiles' e correr collectstatic, o problema ficou parcialmente resolvido, mas o ambiente Codespaces trouxe dificuldades adicionais na servição de ficheiros estáticos.",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 7,
+  "fields": {
+    "titulo": "Implementação do CRUD",
+    "data": "2026-04-29",
+    "descricao": "A implementação das operações CRUD (criar, editar, apagar) para Projetos, Tecnologias, Competências e Formações foi um dos aspectos mais interessantes do trabalho. O Django simplifica muito este processo através dos ModelForms, que geram automaticamente formulários a partir dos modelos, reduzindo significativamente o código necessário.",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 8,
+  "fields": {
+    "titulo": "Dificuldades com CSS e Estilização",
+    "data": "2026-04-29",
+    "descricao": "A estilização das páginas revelou-se mais trabalhosa do que esperado. O CSS não estava a ser carregado corretamente no ambiente Codespaces, o que tornou difícil visualizar o resultado final. Esta experiência mostrou que o ambiente de desenvolvimento pode influenciar bastante o processo de trabalho.",
+    "imagem": "",
+    "fase": "implementacao",
+    "entidade_relacionada": "",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 9,
+  "fields": {
+    "titulo": "Vantagens do Django no Desenvolvimento Web",
+    "data": "2026-04-29",
+    "descricao": "O Django revelou-se muito vantajoso na construção desta aplicação. O sistema MVT separa claramente as responsabilidades — os modelos tratam dos dados, as views da lógica, e os templates da apresentação. Funcionalidades como o ORM, os ModelForms e o sistema de templates com herança (extends) poupam muito tempo e reduzem a repetição de código.",
+    "imagem": "",
+    "fase": "revisao",
+    "entidade_relacionada": "",
+    "uso_ia": ""
+  }
+},
+{
+  "model": "artigos.artigo",
+  "pk": 1,
+  "fields": {
+    "titulo": "Django: O Framework que Simplifica o Desenvolvimento Web",
+    "texto": "O Django é um framework web em Python que segue o padrão MVT (Model-View-Template). Uma das suas grandes vantagens é o ORM integrado, que permite interagir com a base de dados usando código Python em vez de SQL. O sistema de templates com herança (extends) evita repetição de código HTML. O admin gerado automaticamente poupa imenso tempo no desenvolvimento. No geral, o Django torna o desenvolvimento web muito mais rápido e organizado.",
+    "fotografia": "",
+    "link_externo": "https://www.djangoproject.com",
+    "data_criacao": "2026-05-07T22:34:44.717Z",
+    "autor": 3,
+    "likes": [
+      2
+    ]
+  }
+},
+{
+  "model": "artigos.comentario",
+  "pk": 1,
+  "fields": {
+    "artigo": 1,
+    "autor": 2,
+    "texto": "Muito bom artigo!",
+    "data_criacao": "2026-05-07T22:37:25.591Z"
+  }
+},
+{
+  "model": "accounts.perfil",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "token": "YVPTMopbCiRSTJj1uePgaswRdp5bwP3gcYq44rEmE_0"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$fQHjEUP2YLa8aDN09zIdfZ$pur7WiPu/hex3YCb6SYyZSCQB2KRpIJsZ+cesFlYA8o=",
+    "last_login": "2026-05-07T22:24:26.027Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-03-22T18:56:29.807Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$wkiaKEf33njRpTdlkTkZnE$NDR7F4n9GlL5AcGpv0qmFJ/w6YTsDuqaGHjv95JN10Y=",
+    "last_login": "2026-05-07T22:17:07Z",
+    "is_superuser": false,
+    "username": "Lucas",
+    "first_name": "Lucas",
+    "last_name": "Foquim",
+    "email": "foquimlucas@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-07T22:13:46Z",
+    "groups": [
+      1,
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "gestor-portfolio",
+    "permissions": [
+      73,
+      74,
+      75,
+      76,
+      81,
+      82,
+      83,
+      84,
+      53,
+      54,
+      55,
+      56,
+      77,
+      78,
+      79,
+      80
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "autores",
+    "permissions": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108
+    ]
+  }
+}
+]
